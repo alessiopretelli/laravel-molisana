@@ -5,14 +5,14 @@
 }
 
 body{
-    font-family: 'Antonio', sans-serif;
+    font-family: 'Farro', sans-serif;
 }
 
 
 /* header */
 
 header {
-    margin-bottom: 50px;
+    margin-bottom: 2px;
 }
 
 .header_top {
@@ -21,26 +21,44 @@ header {
 }
 
 .nav {
+    height: 50px;
+    position: relative;
     margin-top: 10px;
     text-align: center;
 }
+.nav ul {
+    height: 100%;
+}
 .nav li {
+    height: 100%;
+    line-height: 30px;
+    cursor: pointer;
     display: inline-block;
     list-style: none;
-    margin-right: 10px;
+    color: rgb(1, 1, 124);
+    padding: 0 10px;
 }
 .nav li a {
     text-decoration: none;
-    color: rgb(1, 1, 124);
-    font-size: 20px;
+}
+.nav li:hover, .nav li:hover a {
+    background-color: #9dc9ec;
+    color: rgb(97, 97, 97)
+}
+
+.search {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+}
+.search i {
+    font-size: 25px;
 }
 
 
 /* main */
-
-.home img {
-    width: 100%;
-}
 
 .news_main {
     width: 100%;
@@ -49,20 +67,20 @@ header {
 }
 
 .products {
-    background-color: rgb(211, 221, 233);
     padding: 10px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .card {
+    margin: 2px;
     text-align: center;
     cursor: pointer;
     position: relative;
     width: 33%;
-    overflow: auto;
 }
 .card img {
+    height: 100%;
     width: 100%;
 }
 .layover {
@@ -73,16 +91,49 @@ header {
     height: 100%;
     display: none;
     padding: 25px;
+    overflow: auto;
 }
 .layover h3 {
     color: rgb(98, 158, 199);
     margin-bottom: 10px;
 }
-.layover p {
+.layover .info_product {
     color: rgb(133, 133, 133);
+    font-size: 10px;
+}
+.layover .info_product li {
+    text-align: start;
+    margin: 5px 0;
 }
 .card:hover .layover {
     display: block;
+}
+
+.home {
+    position: relative;
+}
+.home img {
+    width: 100%;
+}
+.home .layover {
+    background-color: rgba(1, 1, 124, 0.0);
+}
+.home .layover i {
+    color: white;
+    font-size: 50px;
+}
+.home:hover .layover h1 {
+    color: white;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.home:hover .layover {
+    background-color: rgba(1, 1, 124, 0.7);
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -98,7 +149,7 @@ footer {
     justify-content: center;
 }
 footer .info_footer {
-    margin: 0 50px;
+    margin: 0 30px;
 }
 footer .info_footer li {
     cursor: pointer;
@@ -122,6 +173,12 @@ footer .prodotti {
 footer .info_azienda a {
     color: grey;
     text-decoration: underline;
+}
+footer .info_azienda a:nth-of-type(3) {
+    display: block;
+}
+footer .info_azienda a:last-of-type, footer .info_azienda p:last-of-type {
+    display: inline-block;
 }
 
 footer .contatti_tel {

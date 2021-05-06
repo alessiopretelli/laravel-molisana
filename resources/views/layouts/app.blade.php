@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@400;500&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     </head>

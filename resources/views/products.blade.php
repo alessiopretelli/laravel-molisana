@@ -13,7 +13,8 @@
             <h3>Tipo: {{ $element['tipo'] }}</h3>
             <h3>Cottura: {{ $element['cottura'] }}</h3>
             <h3>Descrizione:</h3>
-            <p>{{ $element['descrizione'] }}</p>
+            <div class="info_product">{!! $element['descrizione'] !!}</div>
+            {{-- curiosita': traduzione testo da stringa in HTML con '!!' --}}
         </div>
     </div>
     @endforeach
