@@ -19,6 +19,9 @@ header {
     text-align: center;
     width: 100%;
 }
+.header_top img {
+    cursor: pointer;
+}
 
 .nav {
     height: 50px;
@@ -37,6 +40,9 @@ header {
     list-style: none;
     color: rgb(1, 1, 124);
     padding: 0 10px;
+}
+.nav li.active {
+    background-color: #9dc9ec;
 }
 .nav li a {
     text-decoration: none;
@@ -60,6 +66,17 @@ header {
 
 /* main */
 
+/* products */
+main {
+    text-align: center;
+}
+
+main h1 {
+    color: rgb(98, 158, 199);
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
 .news_main {
     width: 100%;
     height: 100%;
@@ -69,7 +86,6 @@ header {
 .products {
     padding: 10px 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 .card {
@@ -91,24 +107,22 @@ header {
     height: 100%;
     display: none;
     padding: 25px;
-    overflow: auto;
 }
-.layover h3 {
+.layover a {
+    text-decoration: none;
+}
+.layover h3, .layover i {
+    font-size: 30px;
     color: rgb(98, 158, 199);
-    margin-bottom: 10px;
-}
-.layover .info_product {
-    color: rgb(133, 133, 133);
-    font-size: 10px;
-}
-.layover .info_product li {
-    text-align: start;
-    margin: 5px 0;
 }
 .card:hover .layover {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* homepage */
 .home {
     position: relative;
 }
@@ -136,6 +150,27 @@ header {
     justify-content: center;
 }
 
+/* details */
+.details {
+    width: 100%;
+    display: flex;
+}
+.details img {
+    width: 50%;
+}
+
+.info_details {
+    padding: 0 25px;
+    overflow: auto;
+}
+.info_details .i_d_product {
+    margin: 10px 0;
+}
+
+.descrizione li {
+    margin: 5px 0;
+    text-align: start;
+}
 
 /* footer */
 

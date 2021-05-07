@@ -19,8 +19,12 @@
         <div class="prodotti">
             <h3>prodotti</h3>
             <ul>
-                @foreach ($pasta as $p)
-                    <li>{{ $p['titolo'] }}.</li>
+                @foreach ($formati as $f)
+
+                    @foreach ($f as $key => $ff)
+                        <a href="{{ route('details_product', ['id' => $key]) }}"><li>{{ $ff['titolo'] }}</li></a>
+                    @endforeach
+
                 @endforeach
             </ul>
         </div>
